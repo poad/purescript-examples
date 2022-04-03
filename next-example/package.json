@@ -1,0 +1,39 @@
+{
+  "name": "next-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "yarn build:clean && yarn build:spago && yarn build:next",
+    "build:clean": "rm -Rf corefn output",
+    "build:spago": "spago build --purs-args '--output corefn --codegen corefn'",
+    "build:next": "next build",
+    "clean": "rm -Rf .cache .next output corefn node_modules .spago *.lock",
+    "dev": "yarn dev:clean && yarn dev:build && yarn dev:serve",
+    "dev:clean": "rm -Rf output",
+    "dev:build": "spago build",
+    "dev:serve": "spago build --watch & next",
+    "start": "yarn build && next start",
+    "test": "spago test"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "~12.0.0",
+    "next": "~12.0.0",
+    "next-plugin-preact": "^3.0.6",
+    "preact": "^10.7.0",
+    "preact-render-to-string": "^5.1.20",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
+    "scheduler": "^0.21.0",
+    "string-replace-loader": "^3.1.0",
+    "xhr2": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "@types/react": "^17.0.43",
+    "eslint": "^8.12.0",
+    "eslint-config-next": "~12.0.0",
+    "purescript": "^0.14.7",
+    "spago": "^0.20.7",
+    "typescript": "^4.6.3"
+  }
+}
