@@ -99,7 +99,39 @@ in  upstream
 -------------------------------
 -}
 let upstream =
-      https://github.com/purescript/package-sets/releases/download/psc-0.14.7-20220321/packages.dhall
-        sha256:dff91304260c1196273badf7d8141e66ab16bed147b95aa175dd8a84ec87d58f
+      https://github.com/purescript/package-sets/releases/download/psc-0.15.0-20220527/packages.dhall
+        sha256:15dd8041480502850e4043ea2977ed22d6ab3fc24d565211acde6f8c5152a799
 
 in  upstream
+  with react-basic-hooks =
+    { dependencies =
+      [ "exceptions"
+      , "newtype"
+      , "effect"
+      , "ordered-collections"
+      , "control"
+      , "console"
+      , "either"
+      , "maybe"
+      , "type-equality"
+      , "web-html"
+      , "aff-promise"
+      , "now"
+      , "react-basic"
+      , "aff"
+      , "foldable-traversable"
+      , "unsafe-reference"
+      , "prelude"
+      , "bifunctors"
+      , "unsafe-coerce"
+      , "refs"
+      , "integers"
+      , "tuples"
+      , "indexed-monad"
+      , "nullable"
+      , "datetime"
+      , "functions" 
+      ]
+    , repo = "https://github.com/megamaddu/purescript-react-basic-hooks"
+    , version = "v8.0.0"
+  }
