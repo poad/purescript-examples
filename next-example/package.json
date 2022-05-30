@@ -2,6 +2,7 @@
   "name": "next-example",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "yarn build:clean && yarn dev:build && yarn build:next",
     "build:clean": "rm -Rf corefn output",
@@ -16,10 +17,10 @@
     "test": "spago test"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "12.1.4",
-    "next": "12.1.4",
+    "@next/bundle-analyzer": "^12.1.4",
+    "next": "^12.1.4",
     "next-plugin-preact": "^3.0.6",
-    "preact": "^10.7.1",
+    "preact": "^10.7.2",
     "preact-render-to-string": "^5.2.0",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
@@ -28,12 +29,12 @@
     "xhr2": "^0.2.1"
   },
   "devDependencies": {
-    "@types/node": "^17.0.31",
+    "@types/node": "^17.0.36",
     "@types/react": "^17.0.43",
-    "eslint": "^8.14.0",
-    "eslint-config-next": "12.1.4",
-    "purescript": "^0.14.7",
+    "eslint": "^8.16.0",
+    "eslint-config-next": "^12.1.4",
+    "purescript": "^0.15.2",
     "spago": "^0.20.9",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.2"
   }
 }

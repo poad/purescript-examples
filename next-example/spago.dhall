@@ -15,6 +15,7 @@ to generate this file without the comments in this block.
   [ "aff"
   , "aff-promise"
   , "affjax"
+  , "affjax-web"
   , "console"
   , "effect"
   , "either"
@@ -25,6 +26,7 @@ to generate this file without the comments in this block.
   , "react-basic-hooks"
   , "transformers"
   , "tuples"
-  ], packages = ./packages.dhall
+  ]
+, packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]
 }

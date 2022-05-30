@@ -1,6 +1,6 @@
-var router = require("next/router").default;
+import router from "next/router";
 
-exports._on = function (event) {
+export const _on = function (event) {
     return function (cb) {
         return function () {
             router.events.on(event, cb);
@@ -8,7 +8,7 @@ exports._on = function (event) {
     };
 };
 
-exports._off = function (event) {
+export const _off = function (event) {
     return function (cb) {
         return function () {
             router.events.off(event, cb);

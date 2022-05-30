@@ -1,1 +1,1 @@
-exports._link = require("next/link").default;
+export const  _link = require("next/link").default;
