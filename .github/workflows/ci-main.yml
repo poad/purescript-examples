@@ -1,0 +1,35 @@
+name: Build and Test for main
+ 
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+jobs:
+  electron-test:
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3.2.0
+        with:
+          node-version: ${{ matrix.node-version }}
+          check-latest: true
+
+      - name: lint
+        if: github.token != ''
+        working-directory: next-example
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn install && yarn lint --fix && yarn build
+
+      - name: build
+        working-directory: next-example
+        if: github.token == ''
+        run: yarn install && yarn build
