@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  electron-test:
+  build-test:
     strategy:
       matrix:
         node-version: [16.x]
@@ -21,13 +21,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           check-latest: true
-
-      - name: lint
-        if: github.token != ''
-        working-directory: next-example
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn install && yarn lint --fix && yarn build
 
       - name: build
         working-directory: next-example

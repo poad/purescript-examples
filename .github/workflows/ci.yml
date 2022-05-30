@@ -34,7 +34,7 @@ jobs:
           owner: ${{ github.repository_owner }}
           merge_method: SQUASH
 
-  electron-test:
+  build-test:
     strategy:
       matrix:
         node-version: [16.x]
@@ -51,13 +51,6 @@ jobs:
       - name: Install PureScript
         if: github.token != ''
         run: sudo yarn global add purescript
-
-      - name: lint
-        if: github.token != ''
-        working-directory: next-example
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn install && yarn lint --fix && yarn build
 
       - name: build
         if: github.token == ''
