@@ -2087,10 +2087,10 @@ negotiator@^0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next-plugin-preact@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/next-plugin-preact/-/next-plugin-preact-3.0.6.tgz#22d566e8e5d50cb4cfc78360d367df44d6aaf94f"
-  integrity sha512-Ze8c8h0jaCPbG0X9T5jJpSDtrfvU9NLlt+DJWtxOu2fn6qPbNU3s61F1hTcldZb3IbpXkp5iGnhPCdgGZEGrCQ==
+next-plugin-preact@^3.0.7:
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/next-plugin-preact/-/next-plugin-preact-3.0.7.tgz#43871a19bb0d7cdd3bc9a18088a4c8c45e242fef"
+  integrity sha512-8Xl+SJT3FCZHS7R/6Gana6e95o09UpiyCsK0cw8P/KW2M+lQcYIwIt4ZLZd+K9TW3JZx6KJDLqVbq0Kd6KZsIg==
   dependencies:
     "@prefresh/next" "^1.4.6"
     "@prefresh/webpack" "^3.3.0"
