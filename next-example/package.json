@@ -19,7 +19,7 @@
   "dependencies": {
     "@next/bundle-analyzer": "12.1.6",
     "next": "12.1.6",
-    "next-plugin-preact": "^3.0.6",
+    "next-plugin-preact": "^3.0.7",
     "preact": "^10.7.3",
     "preact-render-to-string": "^5.2.0",
     "react": "npm:@preact/compat",
