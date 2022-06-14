@@ -17,24 +17,24 @@
     "test": "spago test"
   },
   "dependencies": {
-    "@next/bundle-analyzer": "12.1.6",
-    "next": "12.1.6",
-    "next-plugin-preact": "^3.0.7",
-    "preact": "^10.7.3",
-    "preact-render-to-string": "^5.2.0",
+    "@next/bundle-analyzer": "*",
+    "next": "*",
+    "next-plugin-preact": "*",
+    "preact": "*",
+    "preact-render-to-string": "*",
     "react": "npm:@preact/compat",
     "react-dom": "npm:@preact/compat",
-    "scheduler": "^0.22.0",
-    "string-replace-loader": "^3.1.0",
-    "xhr2": "^0.2.1"
+    "scheduler": "*",
+    "string-replace-loader": "*",
+    "xhr2": "*"
   },
   "devDependencies": {
-    "@types/node": "^17.0.42",
-    "@types/react": "^18.0.12",
-    "eslint": "^8.17.0",
-    "eslint-config-next": "12.1.6",
+    "@types/node": "*",
+    "@types/react": "*",
+    "eslint": "*",
+    "eslint-config-next": "*",
     "purescript": "^0.15.2",
-    "spago": "^0.20.9",
-    "typescript": "^4.7.3"
+    "spago": "*",
+    "typescript": "*"
   }
 }
