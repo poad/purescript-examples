@@ -33,7 +33,7 @@
     "@types/react": "*",
     "eslint": "*",
     "eslint-config-next": "*",
-    "purescript": "^0.15.2",
+    "purescript": "*",
     "spago": "*",
     "typescript": "*"
   }
